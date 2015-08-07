@@ -13,7 +13,7 @@ if($user->isLoggedIn()) {
 <ul>
 	<li><a href="logout.php" >Log Out</a></li>
 	<li><a href="update.php" >Update</a></li>
-	<li><a href="profile.php" >Profile</a></li>
+	<li><a href="profile.php?user=<?=$user->data()->username;?>" >Profile</a></li>
 	<li><a href="changepassword.php" >Change Password</a></li>
 </ul>
 <?php
